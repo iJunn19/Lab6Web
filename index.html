@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab6_dom_event</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="judul">Latihan DOM</h1>
+    <p id="pesan">belum ada tindakan</p>
+    <button id="tombolAksi" type="button">Klik saya!</button>
+
+    <br /><br />
+    <!-- Tambahan biar tombol gaya nyambung -->
+    <button id="tombolGaya" type="button">Ubah Gaya Teks</button>
+    <p id="teksGaya">Teks ini buat ngecek toggle gaya.</p>
+
+    <br />
+    <label for="namaInput">nama :</label>
+    <input type="text" id="namaInput" maxlength="48" />
+    <p>jumlah karakter: <span id="jumlahKarakter">8</span></p>
+
+    <form id="formPendaftaran" novalidate>
+      <label for="nama">Nama lengkap</label>
+      <input type="text" id="nama" name="nama" />
+      <br />
+      <label for="email">email</label>
+      <input type="text" id="email" name="email" />
+      <br />
+      <label for="usia">usia</label>
+      <input type="text" id="usia" name="usia" min="17" max="100" />
+      <br />
+      <button type="submit">daftar</button>
+    </form>
+    <p id="pesanForm" aria-live="polite"></p>
+
+    <section>
+      <h2>Daftar Tugas</h2>
+      <label for="inputTugas">tugas baru</label>
+      <input type="text" name="inputTugas" id="inputTugas" />
+      <button id="tambahTugas" type="button">tambah</button>
+      <p id="pesanTugas" aria-live="polite"></p>
+      <ul id="daftarTugas"></ul>
+    </section>
+
+    <!-- Jangan lupa panggil JS-nya -->
+    <script src="script.js"></script>
+  </body>
+</html>
